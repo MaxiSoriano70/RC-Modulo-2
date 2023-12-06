@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-nav p-md-3 p-lg-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo" src="#" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarGlass"
+                    aria-controls="navBarGlass" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navBarGlass">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Acerca de Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item mx-2 mb-2">
+                            <a class="btn btn-personalized-2" href="#">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item mx-2 mb-2">
+                            <button class="btn btn-personalized-2" type="button" data-bs-toggle="modal"
+                                data-bs-target="#ModalSuscripcion">
+                                Suscripción
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1 bg-main container-main">
+        <section id="carouselProductos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <!-- boton de rayita -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselProductos" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- aqui agregamos las imagenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active container-img">
+                    <img src="./img/img-1.jpg" class="d-block w-100 movieCarousel"
+                        alt="filamento ecofilas">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-carrusel">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                </div>
+                <div class="carousel-item container-img">
+                    <img src="./img/img-2.jpeg" class="d-block w-100 movieCarousel"
+                        alt="colores de filamentos">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-carrusel">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                </div>
+                <div class="carousel-item container-img">
+                    <img src="./img/img-3.jpeg" class="d-block w-100 movieCarousel"
+                        alt="filamentos softcolors">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-carrusel">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                </div>
+            </div>
+            <!--botones de atras y adelante-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
